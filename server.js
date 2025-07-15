@@ -34,8 +34,8 @@ const dbuser = encodeURIComponent(process.env.DBUSER);
 const dbpass = encodeURIComponent(process.env.DBPASS);
 
 // mongoose.connect(`mongodb://localhost:27017/merncafe`).then(() => {
-//   app.listen(8085, () => {
-//     console.log("Server started");
+//   app.listen(8083, () => {
+//     console.log("Server started in local");
 //   });
 // });
 
@@ -45,7 +45,7 @@ mongoose
   )
   .then(() => {
     app.listen(8083, () => {
-      console.log("Server started");
+      console.log("Server started(Atlas)");
     });
   });
 
